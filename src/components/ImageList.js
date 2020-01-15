@@ -15,7 +15,7 @@ const ImageList = props => {
       </div>
       <div className={`image-list ${toggleGridList ? "list-to-grid" : ""}`}>
         {props.image &&
-          props.image.slice(2, 5).map(image => {
+          props.image.slice(0, 3).map(image => {
             return (
               <div key={image.id} className="image-list-item">
                 <div className="image-list-item-inner">

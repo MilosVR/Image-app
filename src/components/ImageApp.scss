@@ -51,13 +51,30 @@ body {
     grid-gap: 2rem;
     margin: 2rem;
     &.grid-to-list {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .image-grid-item {
         margin-bottom: 1rem;
+        display: flex !important;
+        justify-content: space-between;
+        width: 100%;
+        .image-grid-item-image-author {
+          width: 30%;
+        }
+        .image-grid-item-width-height-wrap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 30%;
+        }
         a {
           img {
-            height: 300px !important;
-            object-fit: cover;
+            width: 100%;
+            height: 100% !important;
+
+            object-fit: contain;
           }
         }
       }
@@ -194,7 +211,9 @@ body {
     }
   }
   img {
+    width: 10rem;
     height: 6rem;
+    object-fit: cover;
     margin-right: 1rem;
   }
 }
