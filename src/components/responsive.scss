@@ -1,0 +1,41 @@
+@media only screen and(max-width:768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .image-list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .image-list-item-inner {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      .image-list-item-inner-day-month {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    button {
+      margin: 0.5rem 0;
+    }
+  }
+  .header {
+    flex-direction: column;
+    .sort-btns {
+      padding-top: 1rem;
+    }
+  }
+}
+@media only screen and(max-width:500px) {
+  .image-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
